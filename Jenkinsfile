@@ -103,7 +103,7 @@ pipeline {
 
                 sh '''
 
-                    provider=$(cat slmaven.json |/usr/local/bin/jq -r '.sealightsJvmParams | .sl.scm.provider')
+                    provider=$(cat slmaven.json |/usr/local/bin/jq -r '.sealightsJvmParams | ."sl.scm.provider"')
 
                     /usr/local/bin/mvn ${provider}
 
