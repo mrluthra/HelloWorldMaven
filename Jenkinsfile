@@ -15,7 +15,7 @@ pipeline {
 
                 cleanWs()
 
-                git branch: 'master', url: 'https://github.com/deepak2717/HelloWorldMaven.git'
+                git branch: 'master', url: 'https://github.com/mrluthra/HelloWorldMaven.git'
 
                 sh "echo '${param1}'"
 
