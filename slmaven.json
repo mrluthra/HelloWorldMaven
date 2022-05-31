@@ -1,0 +1,51 @@
+{
+
+                     "token": "MyToken",
+
+                     "createBuildSessionId": true,
+
+                     "appName": "${env.JOB_NAME}",
+
+                     "branchName": "feature/sealight",
+
+                     "buildName": "${env.BUILD_NUMBER}",
+
+                     "packagesIncluded": "*com.kuhniverse.*",
+
+                     "packagesExcluded": "",
+
+                     "filesIncluded": "*.class",
+
+                     "filesExcluded": "*test-classes*",
+
+                     "recursive": true,
+
+                     "includeResources": true,
+
+                     "testStage": "${SUREFIRE_TEST_STAGE}",
+
+                     "failsafeArgLine": "deploy",
+
+                     "labId": "clean compile",
+
+                     "executionType": "full",
+
+                     "logEnabled": false,
+
+                     "logDestination": "console",
+
+                     "logLevel": "off",
+
+                     "logFolder": "/tmp",
+
+                     "sealightsJvmParams": {
+
+                         "sl.scm.provider": "test",
+
+                         "sl.scm.baseUrl": "https://{dns}/projects/{project}/repos/{repo}/browse",
+
+                         "sl.scm.version": "4.9.0"},
+
+                     "enabled": true
+
+                }
